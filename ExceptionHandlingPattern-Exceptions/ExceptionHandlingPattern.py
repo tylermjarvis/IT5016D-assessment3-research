@@ -47,5 +47,7 @@ methods or functions for each exception and build this into our main program,
 therefore it is easier to modify, as we are giving one responsibility to each
 exception (Single Responsibility Principle). When it comes to debugging it will
 be easier to approach due to the development process thinking about all outcomes
-and laying out the functions with one responsibility.
+and laying out the functions with one responsibility. We also avoid
+untestability, as we know the desired outcomes, it is therefore easier to test
+all outcomes.
 '''

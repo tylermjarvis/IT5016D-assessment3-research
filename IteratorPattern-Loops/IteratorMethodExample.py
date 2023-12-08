@@ -59,7 +59,9 @@ This helps solve problems seen in the first example, where you want to access
 a piece of data in a collection, but you don't want to be repeating the action
 over and over. It is also best to follow the Open/Close Principle and
 therefore not have the need to access the original code that holds the
-collection.
+collection. This is important as we may have tested the original block of code,
+therefore if we add more code to it, we could break these tests and end up
+repeating tests.
 
 In the first example, we loop until the letter K (one example). In this example
 we use an explicitly created Iterator method. This uses a generator (yield) to

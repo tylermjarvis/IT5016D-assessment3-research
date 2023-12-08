@@ -85,8 +85,16 @@ is-a relationship to the original class. Because Python works with inheritance,
 we can do this.
 This is important as it allows us to work with classes that would not be
 compatible with each other.
-We also use the single responsibility principle by implementing one behaviour
-in each method.
+We also use the Single Responsibility Principle by implementing one behaviour
+in each method. By following the Single Responsibility Principle we are avoiding
+the T and U in S.T.U.P.I.D. The T stands for tight coupling, which occurs when
+code blocks rely on the code of other code blocks. By having one function
+for each method, we avoid these methods relying on each other. The Adapter
+Method allows us to attach new functions to classes that would not be able
+to talk to each other, therefore reducing the need of reliance on other code
+blocks. This allows for better testability, which comes under U in S.T.U.P.I.D.
+We want to make sure that the code we do have is easier to test. This is
+achieved by reducing the coupling.
 
 An example of where you may want to use the Adapter Method pattern is if you
 wanted a class to behave in a similar way to another class that it is

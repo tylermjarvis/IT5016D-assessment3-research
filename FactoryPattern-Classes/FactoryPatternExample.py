@@ -66,7 +66,8 @@ to coding, as it allows you to create different objects using similar
 functionality, such as a language. Therefore you can input data that is shared
 between classes and produce different outputs with this data, much like a
 factory works. Again, we are using the Single Responsibility Principle, to
-create each language.
+create each language. This makes it easier for us to test any problems that may
+arise from the separate language code blocks.
 In the example above, we use the initializer to translate a given message into
 different languages. Because these languages have translation in common, we can
 use this as the starting initializer that can be called from a factory method

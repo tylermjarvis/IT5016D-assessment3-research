@@ -44,7 +44,11 @@ in the initialiser that can be updated with the decorator.
 In basic terms a decorator is a function added to another function.
 
 The Decorator Pattern is used when we may have the need to add functions on top
-of existing code, without breaking the Single Responsibility Principle.
+of existing code, without breaking the Single Responsibility Principle. There is
+reduce coupling here due to adding extra features on top as a decorator. The
+idea here we can add decorators as we please and therefore are not bound by the
+existing code or whether or not we need to add a decorator in order to add
+another decorator. They are all separate from each other.
 Therefore we need to add a class or function that will replace the existing
 code or wrap it in another behaviour that meets these new required needs.
 This means that the wrapper will be responsible for one function as it adds
